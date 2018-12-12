@@ -1,0 +1,73 @@
+.w(@px){
+	width:unit(@px/37.5,rem);// 给第一个参数添加一个单位
+}
+.h(@px){
+	height:unit(@px/37.5,rem);// 给第一个参数添加一个单位
+}
+.lh(@px){
+	line-height:unit(@px/37.5,rem);// 给第一个参数添加一个单位
+}
+.fs(@px){
+	font-size:unit(@px/37.5,rem)
+}
+.padding(@top,@right,@bottom,@left){
+	padding-top:unit(@top/37.5,rem);
+	padding-bottom:unit(@bottom/37.5,rem);
+	padding-left:unit(@left/37.5,rem);
+	padding-right:unit(@right/37.5,rem);
+}
+.pt(@top){
+   padding-top:unit(@top/37.5,rem);
+}
+.pb(@bottom){
+    padding-bottom:unit(@bottom/37.5,rem);
+}
+.ptb(@top,@bottom){
+   padding-top:unit(@top/37.5,rem); 
+   padding-bottom:unit(@bottom/37.5,rem);
+}
+.plr(@left,@right){
+    padding-left:unit(@left/37.5,rem);
+    padding-right:unit(@right/37.5,rem);
+}
+.margin(@top,@right,@bottom,@left){
+	margin-top:unit(@top/37.5,rem);
+	margin-bottom:unit(@bottom/37.5,rem);
+	margin-left:unit(@left/37.5,rem);
+	margin-right:unit(@right/37.5,rem);
+}
+.mlr(@left,@right){
+   margin-left:unit(@left/37.5,rem); 
+   margin-right:unit(@right/37.5,rem);
+}
+.mtb(@top,@bottom){
+   margin-top: unit(@top/37.5,rem);
+   margin-bottom: unit(@bottom/37.5,rem);
+}
+.mt(@px){
+	margin-top:unit(@px/37.5,rem);
+}
+.mb(@px){
+    margin-bottom:unit(@px/37.5,rem);
+}
+.top(@px){
+	top:unit(@px/37.5,rem);
+}
+.left(@px){
+	left:unit(@px/37.5,rem);
+}
+.right(@px){
+	right:unit(@px/37.5,rem);
+}
+.bottom(@px){
+	bottom:unit(@px/37.5,rem);
+}
+.bg-c(@color){
+    background: @color;
+}
+.pre(@style,@value){
+    -webkit-@{style}: unit(@value/37.5,rem);
+       -moz-@{style}: unit(@value/37.5,rem);
+        -ms-@{style}: unit(@value/37.5,rem);
+         -o-@{style}: unit(@value/37.5,rem);
+}

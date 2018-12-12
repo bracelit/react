@@ -1,0 +1,88 @@
+@import url('./main.less');
+.login{
+    .fs(16);
+    .padding(5,10,10,10);
+    color: #474747;
+    .top{
+        p:nth-child(1){
+            .dis-f;
+            .sp-b;
+            span,svg{
+                .padding(5,5,5,5);
+            }
+        }
+        p:nth-child(2){
+            .fs(30);
+            color: black;
+            .ptb(20,20);
+        }
+    }
+    .middle{
+        .pt(50);
+        div{
+            .h(80);
+            position: relative;
+            p{
+                position: absolute;
+                left: 0px;
+                top: 50%;
+                z-index: 100;
+                color: #ccc;
+                transition: all 1s linear;
+            }
+            input{
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                .fs(18);
+                .h(50);
+                border-bottom: 1px solid gray;
+                .w100;
+            }
+        }
+        >p:nth-of-type(1){
+            text-align: right;
+            .ptb(20,20);
+        }
+        >p:nth-of-type(2){
+            text-align: center;
+             .ptb(10,10);
+             .bg-c(#999);
+             color: white;
+        }
+        >p:nth-of-type(3){
+             .ptb(20,10);
+             .ac;
+         }
+         >p:nth-of-type(4){
+              .ptb(10,10);
+              .ac;
+         }
+    }
+    .bottom{
+        >dl{
+            .dis-f;
+            dl{
+                flex: 1;
+                text-align: center;
+                dt{
+                    .dis-i;
+                     .w(90);
+                    .h(90);
+                }
+            }
+            dl:nth-child(1){
+                dt{
+                    background: url('../img/joint-landing.png');
+                    background-position: -0px -90px;
+                }
+            }
+             dl:nth-child(2){
+                  dt{
+                    background: url('../img/joint-landing.png');
+                    background-position: -0px -180px;
+                }
+             }
+        }
+    }
+}

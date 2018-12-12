@@ -1,0 +1,48 @@
+@import url('./main.less');
+.header{
+    .h(75);
+    .plr(10,10);
+    .w(375);
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    z-index: 100;
+    .box-size;
+    p{
+    .dis-f;
+    .flexwrap;
+    align-items: center;
+    }
+    p:nth-child(1){
+        .h(40);
+        a{ color: #474747;
+            flex: 1;
+            .fs(16);
+            text-align: center;
+        }
+        img{
+            .h(40);
+            .dis-b;
+            flex: 4;
+        }
+    }
+    p:nth-child(2){
+        .h(30);
+        .sp-c;
+        .fs(20);
+        color: #000;
+        .pre(border-radius,20);
+         .bg-c( hsla(0,0%,98%,.8));
+         svg{
+             color: grey;
+         }
+        input{
+            .h(30);
+            .dis-b;
+            .w(300);
+            .mlr(10,0);
+            .box-size;
+            .bg-c( hsla(0,0%,98%,.8));
+        }
+    }
+}

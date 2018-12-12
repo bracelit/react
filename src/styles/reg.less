@@ -1,0 +1,113 @@
+@import './main.less';
+.reg{
+    .fs(16);
+    .plr(10,10);
+    p{
+        .h(50);
+    }
+     i{
+            position: absolute;
+            .dis-i;
+            right: 0px;
+            .h(20);
+            .w(20);
+            top: 50%;
+            background:url('../img/del@2x.png') center no-repeat;
+            background-size: cover;
+            .pre(border-radius,10);
+        }
+    p:nth-of-type(1){
+        color: darkgray;
+        .dis-f;
+        .sp-b;
+        svg{
+            .padding(10,10,10,10);
+        }
+        a{
+            .padding(10,10,10,10);
+        }
+    }
+    p:nth-of-type(2){
+        .fs(30);
+        .h(40);
+    }
+    >p:nth-of-type(3){
+        .ac;
+        .h(40);
+        .lh(40);
+        color: white;
+        .bg-c(#999);
+        .fs(20);
+        .mt(20);
+    }
+     >p:nth-of-type(4){
+         .ac;
+         .lh(50);
+     }
+      >p:nth-of-type(5){
+          .ac;
+          .fs(16);
+          .lh(50);
+          color: #454545;
+          span{
+              color: #000;
+          }
+      }
+    div{
+        position: relative;
+        .h(70);
+        p{
+             position: absolute;
+                left: 0px;
+                top: 50%;
+                z-index: 100;
+                color: #ccc;
+                transition: all 1s linear;
+        }
+        input{
+             position: absolute;
+                left: 0px;
+                bottom: 0px;
+                .fs(18);
+                .h(50);
+                border-bottom: 1px solid lightgrey;
+                .w100;
+        }
+    }
+    >div:nth-of-type(1){
+         border-bottom: 1px solid lightgrey;
+        input{
+            .w(250);
+            border:none;
+        }
+        i{
+            .right(105);
+            top:55%;
+        }
+        img{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+    }
+    >div:nth-of-type(3){
+        span{
+            .dis-i;
+            position: absolute;
+            right: 0px;
+            bottom: 10px;
+            .ac;
+            .pre(border-radius,5);
+            .w(100);
+            color: white;
+            .h(30);
+            .lh(30);
+            .bg-c(skyblue);
+        }
+        i{
+            position: absolute;
+            .right(102);
+            
+        }
+    }
+}
